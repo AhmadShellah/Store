@@ -5,11 +5,11 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store", "Store\Store.csproj", "{2BEB78CB-5CA6-4E88-B913-D550F6BF1391}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{8F8BC8F5-A9FE-4A09-90CB-2DDDEE74A2F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BL", "BL\BL.csproj", "{8F8BC8F5-A9FE-4A09-90CB-2DDDEE74A2F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objects", "Objects\Objects.csproj", "{A01DCC0A-3BC3-4C0E-B4BE-D4760540793F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Objects", "Objects\Objects.csproj", "{A01DCC0A-3BC3-4C0E-B4BE-D4760540793F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseAccses", "DataBaseAccses\DataBaseAccses.csproj", "{7CDAD736-E77F-46EB-B4E0-D8001CE9D067}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBaseAccses", "DataBaseAccses\DataBaseAccses.csproj", "{7CDAD736-E77F-46EB-B4E0-D8001CE9D067}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

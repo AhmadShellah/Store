@@ -1,5 +1,6 @@
 ﻿using DataBaseAccses;
 using Objects.Dtos.ProductDtos;
+using Objects.Models;
 
 namespace BL
 {
@@ -59,6 +60,15 @@ namespace BL
             //}).OrderByDescending(c=> c.CreationDate).ToList();
 
             //return result;
+        }
+
+        public ProductModel Create(ProductModel inputFromUser)
+        {
+            var afterInsert = _productRepo.Create(inputFromUser);
+
+            afterInsert.Photo = afterInsert.Id.ToString() + ".jpg";
+
+            return afterInsert;
         }
 
         public ProductDto Create(CreateProductDto inputFromUser)

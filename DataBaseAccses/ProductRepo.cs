@@ -1,4 +1,6 @@
-﻿namespace DataBaseAccses
+﻿using Objects.Models;
+
+namespace DataBaseAccses
 {
     public class ProductRepo
     {
@@ -15,7 +17,25 @@
         {
             _products.Add(inputFromUser);
 
-            return _products.FirstOrDefault(s => inputFromUser.Id == s.Id);
+            var result = _products.FirstOrDefault(s => inputFromUser.Id == s.Id);
+
+            return result;
+        }
+
+        public ProductModel Create(ProductModel inputFromUser)
+        {
+            var insertToDataBase = new Product()
+            {
+                Name = inputFromUser.Name,
+                Price = inputFromUser.Price,
+                Description = inputFromUser.Description,
+            };
+
+            _products.Add(insertToDataBase);
+
+            var result = _products.FirstOrDefault(s => inputFromUser.Id == s.Id);
+
+            return inputFromUser;
         }
 
         public void Delete(Guid id)
